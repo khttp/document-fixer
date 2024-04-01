@@ -3,7 +3,7 @@ import { HydratedDocument } from 'mongoose';
 
 
 
-export type CatDocument = HydratedDocument<Brand>;
+export type BrandDocument = HydratedDocument<Brand>;
 
 @Schema()
 export class Brand {
@@ -37,5 +37,5 @@ export class Brand {
 	numberOfLocations: number;
 }
 
-export const CatSchema = SchemaFactory.createForClass(Brand);
+export const BrandSchema = SchemaFactory.createForClass(Brand);
 
