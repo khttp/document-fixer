@@ -36,7 +36,9 @@ export class BrandsService {
           document.numberOfLocations=isNaN(parseInt(document.numberOfLocations, 10))?1:parseInt(document.numberOfLocations); // Convert year to number type
           // Validate and save each document using Mongoose
             console.log(document);
+            await this.model.validate(document);
             await this.model.updateOne({ _id: document._id }, document);
+
           }
           return jsonData;
         }
