@@ -3,6 +3,9 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { BrandsModule } from './brands/brands.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/nest'),BrandsModule],
+  imports: [
+    MongooseModule.forRoot('mongodb://localhost/brandDB'),
+    BrandsModule
+  ]
 })
 export class AppModule {}

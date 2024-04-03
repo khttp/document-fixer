@@ -16,7 +16,9 @@ Document Fixer is a NestJS application that fixes inconsistent data in a JSON fi
 **Hint**
 make sure that the brands.json file is in the correct location in the assets folder
    ```bash
+
    git clone https://github.com/your-username/document-fixer.git
+   mongoimport --db your_database --collection your_collection --file your_file.json --jsonArray
    npm install 
    npm start 
    ```
