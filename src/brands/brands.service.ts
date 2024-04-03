@@ -3,7 +3,17 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import * as faker from 'faker';
+import * as exceljs from 'exceljs';
 import * as fs from 'fs';
+
+const Workbook = new exceljs.Workbook();
+const worksheet = Workbook.addWorksheet('Seed Data');
+worksheet.columns = [
+    { header: 'Brand Name', key: 'brandName' },
+    { header: 'Year Founded', key: 'yearFounded' },
+    { header: 'Headquarters', key: 'headquarters' },
+    { header: 'Number of Locations', key: 'numberOfLocations' },
+];
 @Injectable()
 export class BrandsService {
     constructor(
@@ -57,10 +67,14 @@ export class BrandsService {
               };
               
               seedData.push(newBrandData);
+              worksheet.addRow(newBrandData);
             }
       
             // Save seed data to the database
             await this.model.create(seedData);
+            await Workbook.xlsx.writeFile('seedData.xlsx');
+
+
       
             console.log('Seed data successfully added to the database');
           } catch (error) {
