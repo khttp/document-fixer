@@ -2,7 +2,8 @@ import { Brand } from './brands.schema';
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
-
+import * as faker from 'faker';
+import * as fs from 'fs';
 @Injectable()
 export class BrandsService {
     constructor(
@@ -42,7 +43,46 @@ export class BrandsService {
           }
           return jsonData;
         }
-    }
+        async seedDatabase(): Promise<void> {
+          try {
+            const seedData = [];
+      
+            // Generate seed data for 10 new brand documents
+            for (let i = 0; i < 10; i++) {
+              const newBrandData = {
+                brandName: faker.company.companyName(),
+                yearFounded: faker.date.past().getFullYear(),
+                headquarters: faker.address.city(),
+                numberOfLocations: faker.datatype.number({ min: 1, max: 100 }),
+              };
+              
+              seedData.push(newBrandData);
+            }
+      
+            // Save seed data to the database
+            await this.model.create(seedData);
+      
+            console.log('Seed data successfully added to the database');
+          } catch (error) {
+            console.error('Error seeding database:', error);
+          }
+        }
+        async exportBrandsToJson(): Promise<void> {
+          try {
+            // Query all documents from the brands collection
+            const brands = await this.model.find().lean().exec();
+      
+            // Write the JSON data to a file
+            fs.writeFileSync('fixedBrands.json', JSON.stringify(brands, null, 2));
+      
+            console.log('Brands collection exported to brands.json');
+          } catch (error) {
+            console.error('Error exporting brands collection:', error);
+          }
+        }
+  }
+      
+    
       //ToDo - 
     //read data from json
     //validate each document against schema

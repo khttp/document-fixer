@@ -1,0 +1,162 @@
+[
+  {
+    "_id": "66069ff93007b006635c024b",
+    "brandName": "Refined Granite Towels",
+    "yearFounded": 2000,
+    "headquarters": "Lemkeland",
+    "numberOfLocations": 1
+  },
+  {
+    "_id": "66069ff93007b006635c0245",
+    "brandName": "Ward, Hand and Ortiz",
+    "yearCreated": "1970",
+    "headquarters": "Jastside",
+    "numberOfLocations": 2132,
+    "yearFounded": 1970
+  },
+  {
+    "_id": "66069ff93007b006635c024a",
+    "brandName": "Oriental Plastic Pants",
+    "yearFounded": 1970,
+    "yearCreated": 1970,
+    "headquarters": "Wardfort",
+    "numberOfLocations": 1
+  },
+  {
+    "_id": "66069ff93007b006635c024e",
+    "brandName": "Generic Cotton Pizza",
+    "yearFounded": 2000,
+    "headquarters": "North Ralphport",
+    "numberOfLocations": 1,
+    "brand": ""
+  },
+  {
+    "_id": "66069ff93007b006635c0249",
+    "brandName": "Gorgeous Granite Pizza",
+    "headquarters": "Jonesborough",
+    "numberOfLocations": 1,
+    "yearsFounded": "1980",
+    "yearFounded": 1980
+  },
+  {
+    "_id": "66069ff93007b006635c0248",
+    "brandName": "Modern Granite Fish",
+    "yearFounded": 1970,
+    "yearCreated": "1970",
+    "headquarters": "Kundebury",
+    "numberOfLocations": 1
+  },
+  {
+    "_id": "66069ff93007b006635c0246",
+    "brandName": "Ergonomic Frozen Bacon",
+    "yearFounded": 2000,
+    "headquarters": "Gavinstead",
+    "numberOfLocations": 1
+  },
+  {
+    "_id": "66069ff93007b006635c0247",
+    "brandName": "Breitenberg, Greenholt and Ledner",
+    "yearFounded": 1982,
+    "headquarters": "Fort Lenna",
+    "numberOfLocations": 1000
+  },
+  {
+    "_id": "66069ff93007b006635c024c",
+    "brandName": "Corkery Inc",
+    "yearFounded": 1935,
+    "numberOfLocations": 9200,
+    "hqAddress": "DuBuqueburgh",
+    "brand": {},
+    "headquarters": "DuBuqueburgh"
+  },
+  {
+    "_id": "66069ff93007b006635c024d",
+    "yearFounded": 2000,
+    "headquarters": "West Mylesboro",
+    "numberOfLocations": 1,
+    "brand": {
+      "name": "Licensed Concrete Tuna"
+    },
+    "brandName": "Licensed Concrete Tuna"
+  },
+  {
+    "_id": "660d5a41d4003d309c439fe6",
+    "brandName": "Bartoletti, Marvin and Casper",
+    "yearFounded": 2023,
+    "headquarters": "East Carson",
+    "numberOfLocations": 70,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439fe7",
+    "brandName": "Davis - Trantow",
+    "yearFounded": 2023,
+    "headquarters": "Runolfssonland",
+    "numberOfLocations": 80,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439fea",
+    "brandName": "Schuster - Gleason",
+    "yearFounded": 2023,
+    "headquarters": "Ashtonstad",
+    "numberOfLocations": 69,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439fe8",
+    "brandName": "Beahan - Morissette",
+    "yearFounded": 2023,
+    "headquarters": "Port Warren",
+    "numberOfLocations": 69,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439fec",
+    "brandName": "Beer, Lakin and Grant",
+    "yearFounded": 2024,
+    "headquarters": "Lake Anibal",
+    "numberOfLocations": 77,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439fed",
+    "brandName": "Crooks - Ziemann",
+    "yearFounded": 2023,
+    "headquarters": "Vista",
+    "numberOfLocations": 77,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439fee",
+    "brandName": "Gottlieb, Mante and Rowe",
+    "yearFounded": 2023,
+    "headquarters": "West Willardmouth",
+    "numberOfLocations": 4,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439fef",
+    "brandName": "Barton, Corwin and Hahn",
+    "yearFounded": 2023,
+    "headquarters": "South Kristin",
+    "numberOfLocations": 24,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439fe9",
+    "brandName": "King - Langosh",
+    "yearFounded": 2023,
+    "headquarters": "Lake Garret",
+    "numberOfLocations": 54,
+    "__v": 0
+  },
+  {
+    "_id": "660d5a41d4003d309c439feb",
+    "brandName": "Conroy Inc",
+    "yearFounded": 2023,
+    "headquarters": "West Cletushaven",
+    "numberOfLocations": 88,
+    "__v": 0
+  }
+]

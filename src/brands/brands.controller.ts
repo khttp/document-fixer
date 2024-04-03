@@ -1,12 +1,12 @@
 import { Controller, Get} from '@nestjs/common';
 import { BrandsService } from './brands.service';
 
-@Controller()
+@Controller('brand')
 export class BrandController {
  
   constructor(private readonly BrandService: BrandsService) {}
-  @Get('brand') 
-  async readFile() {
+  @Get('/fix-document') 
+  async fixDocument() {
     try {
       const jsonContents =await this.BrandService.processAndSaveBrandsData();
       return { success: true, data: jsonContents };
@@ -14,6 +14,24 @@ export class BrandController {
     } catch (error) {
       return { success: false, error: error.message };
       }
+  }
+  @Get('seed')
+  async addFakeData(){
+    try {
+      await this.BrandService.seedDatabase();
+      return { success: true, message: 'Data seeded successfully' };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
+  }
+  @Get('export')
+  async exportData(){
+    try {
+      const data = await this.BrandService.exportBrandsToJson();
+      return { success: true, data: data };
+    } catch (error) {
+      return { success: false, error: error.message };
+    }
   }
   
 }
